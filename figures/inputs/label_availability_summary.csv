@@ -1,0 +1,3 @@
+cohort,eligible_records,positive_days29_56,negative_days29_56,prevalence,quarantined_label_records,unknown_withdrawal_time_quarantined,followup_rule,negative_is_not_lifetime_nonwithdrawal
+2013J,7676,218,7458,0.02840020844189682,3,2,module lasts beyond day 56 and observed registration record plus final-status validation,True
+2014J,6771,186,6585,0.027470093043863535,58,58,module lasts beyond day 56 and observed registration record plus final-status validation,True

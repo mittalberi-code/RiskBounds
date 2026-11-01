@@ -1,0 +1,6 @@
+data/raw/
+data/derived/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.venv/

@@ -1,0 +1,4 @@
+feature,n,mean,median,q1,q3
+total_clicks_through_day28,6829,280.64006443110264,170.00000000000006,70.0,379.00000000000006
+active_days_0_28,6829,10.980670669204862,10.0,5.0,16.0
+recency_days_at_day28_including_zero_as_no_activity,6829,3.4977302679748132,2.0,0.0,5.0

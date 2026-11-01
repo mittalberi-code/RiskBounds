@@ -1,0 +1,14 @@
+cohort,stage,records
+2013J source,Raw registrations in six shared modules,8845
+2013J source,Accepted eligible with known label,7676
+2013J source,Excluded / quarantined (derived),1169
+2013J source,"Known positives, days 29–56",218
+2014J target,"Raw registrations, all modules",10809
+2014J target,"Removed: any 2013J training-student ID, before module filter",890
+2014J target,"Remaining CCC rows, not in common module set",1596
+2014J target,Remaining records in six common modules,8323
+2014J target,Accepted known eligible/label records,6771
+2014J target,Uncertain at-risk/outcome cases retained for bounds,58
+2014J target,"Known ineligible / quarantined, derived",1494
+2014J target,Known positive labels (days 29–56),186
+2014J target,Known horizon-negative labels,6585

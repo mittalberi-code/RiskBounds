@@ -1,0 +1,2 @@
+estimand,lower_fraction,lower_decimal,lower_attaining_m,upper_fraction,upper_decimal,upper_attaining_m,known_n,uncertain_K,interpretation
+Brier(registration calibrated) − Brier(activity calibrated),178425698684165355365473531502370512707/580947070925772191747846298537886279008256,0.0003071290098766379,58,889772612563384017376104856164416714819/580351576783660549436785392974880684638208,0.0015331613596960508,51,6771,58,"Finite-cohort identification interval, not confidence interval"

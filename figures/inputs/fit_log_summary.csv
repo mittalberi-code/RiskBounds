@@ -1,0 +1,5 @@
+fit_stage,elapsed_seconds,status,warnings_count,warning_class,warning_summary
+registration_logistic_base_fit,1.5371961600003488,complete,1,FutureWarning,sklearn LogisticRegression penalty deprecation (FutureWarning)
+registration_logistic_calibration_fit,1.5448249959999885,complete,1,FutureWarning,sklearn LogisticRegression penalty deprecation (FutureWarning)
+registration_plus_vle_logistic_base_fit,1.6102360650002083,complete,1,FutureWarning,sklearn LogisticRegression penalty deprecation (FutureWarning)
+registration_plus_vle_logistic_calibration_fit,1.5638492379994204,complete,1,FutureWarning,sklearn LogisticRegression penalty deprecation (FutureWarning)

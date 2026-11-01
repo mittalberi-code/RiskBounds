@@ -1,0 +1,105 @@
+{
+  "source_url": "https://archive.ics.uci.edu/static/public/349/open+university+learning+analytics+dataset.zip",
+  "retrieved_at_utc": "2026-10-31T12:32:10.808772+00:00",
+  "license": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+  "citation": "Kuzilek, Hlosta & Zdrahal, Scientific Data 4, 170171 (2017), DOI 10.1038/sdata.2017.171; UCI DOI 10.24432/C5KK69",
+  "software": {
+    "python": "3.12.14",
+    "pipeline_sha256": "ced2b9c0792b8170afe56d61b0df219b51a116c2ad3ea7acdaea96ad220342c9",
+    "acquirer_sha256": "1a1613ed36e93f82ad81906f24fefe72ee0bd9bd3c00d170c7697a1aff8f81b9"
+  },
+  "archive": {
+    "path": "data/raw/oulad.zip",
+    "bytes": 46748244,
+    "sha256": "f2ed1902616c1fe8d2824d872c0b7d2d72be435bf0124d077044fe4be2c6d3e4"
+  },
+  "tables": {
+    "courses": {
+      "bytes": 526,
+      "sha256": "4f16eee7454b15e109b0a21a0e43be820e6846ed6f9301bb7feb5ab5ad737a75"
+    },
+    "assessments": {
+      "bytes": 8211,
+      "sha256": "9ce92381e4a0ac457f8e251b2eb2c179ed51e023ab30d1d671a0268bd62316ba"
+    },
+    "studentAssessment": {
+      "bytes": 5690483,
+      "sha256": "b1839e17618a5de36b6d189a242d3123f7939a56c8c9ccef0c17b9199c614a6b"
+    },
+    "studentInfo": {
+      "bytes": 3462763,
+      "sha256": "815fbc3e2de29f79900bc63f0345a35db62c9146afaa1d86e7107b8b3beffc60"
+    },
+    "studentRegistration": {
+      "bytes": 1132550,
+      "sha256": "bbc87a0de1fe2a9ec6decce1ca6c1a02cf17b54ad3bdcc673fc6413b41c61d47"
+    },
+    "studentVle": {
+      "bytes": 453836331,
+      "sha256": "52668253d876c5becbcb72185977152700cecab2942aca807fecc3dd54b937f0"
+    },
+    "vle": {
+      "bytes": 270612,
+      "sha256": "d7a146497edd0e47ef536144b58796c07b554002d3753e848b8e4cd8a56f4c38"
+    }
+  },
+  "schema": {
+    "courses": [
+      "code_module",
+      "code_presentation",
+      "module_presentation_length"
+    ],
+    "assessments": [
+      "code_module",
+      "code_presentation",
+      "id_assessment",
+      "assessment_type",
+      "date",
+      "weight"
+    ],
+    "studentAssessment": [
+      "id_assessment",
+      "id_student",
+      "date_submitted",
+      "is_banked",
+      "score"
+    ],
+    "studentInfo": [
+      "code_module",
+      "code_presentation",
+      "id_student",
+      "gender",
+      "region",
+      "highest_education",
+      "imd_band",
+      "age_band",
+      "num_of_prev_attempts",
+      "studied_credits",
+      "disability",
+      "final_result"
+    ],
+    "studentRegistration": [
+      "code_module",
+      "code_presentation",
+      "id_student",
+      "date_registration",
+      "date_unregistration"
+    ],
+    "studentVle": [
+      "code_module",
+      "code_presentation",
+      "id_student",
+      "id_site",
+      "date",
+      "sum_click"
+    ],
+    "vle": [
+      "id_site",
+      "code_module",
+      "code_presentation",
+      "activity_type",
+      "week_from",
+      "week_to"
+    ]
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "package": "RiskBounds",
+  "purpose": "Sanitized source, fixed protocol and aggregate outputs; no new model fitting",
+  "historical_locked_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+  "historical_results_commit": "719a67231abd0d0d7425a1619cb9248c3f04a4b1",
+  "historical_reconciliation_commit": "32f89a20471c49f47ce3c9f65660e4a64bc8b0d5",
+  "analysis_sources": [
+    {
+      "file": "analysis/.gitignore",
+      "sha256": "7b1c528047a60a9ae15ee2a839c1089e9886e133bd0e338daf71da801ad8563f",
+      "git_blob_sha1": "a11ab77dd6007604b34285f1885fca7227d2ec98",
+      "origin_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+      "modified": false
+    },
+    {
+      "file": "analysis/acquire_oulad.py",
+      "sha256": "1a1613ed36e93f82ad81906f24fefe72ee0bd9bd3c00d170c7697a1aff8f81b9",
+      "git_blob_sha1": "b9da84da458fba32196305140ffb03b70c2ad716",
+      "origin_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+      "modified": false
+    },
+    {
+      "file": "analysis/audit/data_manifest.json",
+      "sha256": "610a4bfe83b958d09e07e2e8ff233aad51d78a3f16ab26da968cd858c28b2ae9",
+      "git_blob_sha1": "eb511b8740b4c730271e3bc4e09cfde9a237330c",
+      "origin_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+      "modified": false
+    },
+    {
+      "file": "analysis/audit_label_availability.py",
+      "sha256": "db7f9782412fd7028a39347948679dfed81a05400adff64a09ca06eed9fe877e",
+      "git_blob_sha1": "44800acd06c1b7b74f0eaea3442623f2939fd5ad",
+      "origin_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+      "modified": false
+    },
+    {
+      "file": "analysis/audit_pipeline.py",
+      "sha256": "ced2b9c0792b8170afe56d61b0df219b51a116c2ad3ea7acdaea96ad220342c9",
+      "git_blob_sha1": "db9c7e1c0e9d20d54eb034a6961e03ccc6ad2a15",
+      "origin_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+      "modified": false
+    },
+    {
+      "file": "analysis/protocol/__init__.py",
+      "sha256": "d48b0add48ebb4f026dbf506cbb33eeddcdd86e86ec1afa1a338f5c6ad7bca7e",
+      "git_blob_sha1": "650637b38aef3986eb3376f72d3ca4f0292f91fa",
+      "origin_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+      "modified": false
+    },
+    {
+      "file": "analysis/protocol/brier_bounds.py",
+      "sha256": "10756935b2bb1ad6a939d9593a388f104c5a6153edc5da0a64af688584022f9f",
+      "git_blob_sha1": "bd42313a7f06f8b0785e2bba69a189fb9f6fcebf",
+      "origin_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+      "modified": false
+    },
+    {
+      "file": "analysis/protocol/candidate_protocol.json",
+      "sha256": "05032556f0cbbf1e777caa0df00db5042fa3f64ef3ad10245088b2eb77df9249",
+      "git_blob_sha1": "618c87e46daa69f9310f210047c53ca7896ef943",
+      "origin_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+      "modified": false
+    },
+    {
+      "file": "analysis/protocol/day28_features.py",
+      "sha256": "c9f0631fe630efa657b42f26f1d2ebb71336814037536c62207b4115cc6d969e",
+      "git_blob_sha1": "eb9af99cf910df99fd58cbe784a7abe6aabe2102",
+      "origin_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+      "modified": false
+    },
+    {
+      "file": "analysis/protocol/draft_fitting_protocol.md",
+      "sha256": "1f9d78325a87c434a552be2181b6a85c7bef351b206b67d746d7747f87ff8d12",
+      "git_blob_sha1": "623d19dca3c419399f75fa362ff99fe38233a63c",
+      "origin_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+      "modified": false
+    },
+    {
+      "file": "analysis/protocol/execution_contract.py",
+      "sha256": "4377c858c6bab96a1ae2e5fb3921d3f39ab0bc7afa0ff2ede8a4c9aa271faa6f",
+      "git_blob_sha1": "847c7c638f3f49c384d8b41fa63a1c88e784b527",
+      "origin_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+      "modified": false
+    },
+    {
+      "file": "analysis/protocol/locked_runner.py",
+      "sha256": "d6ef34ceedf98873e48765324a125f780397830f8b670d936b1c140a12f5ce61",
+      "git_blob_sha1": "05737c26ae0227cff4aa55c2dfb4d0d90cb78faa",
+      "origin_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+      "modified": false
+    },
+    {
+      "file": "analysis/protocol/partial_brier_bounds.md",
+      "sha256": "bf07caaa68755cd416fea6468171e59e4ba3ae01f672e61ea09c86c0bba0d5a7",
+      "git_blob_sha1": "dcd4cef81b8b06a22b4f540b6da24246ffacbb45",
+      "origin_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+      "modified": false
+    },
+    {
+      "file": "analysis/protocol/requirements-modeling.txt",
+      "sha256": "8b47da6707b6689affafe219cbd6f9f1061bb88a03637d93c4b2b6646f28e8b1",
+      "git_blob_sha1": "7aa7039379268d077309d9bd8abbe2feaa4fa2c0",
+      "origin_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+      "modified": false
+    },
+    {
+      "file": "analysis/protocol/target_bounds.py",
+      "sha256": "c7baf092271992052b04f5544975b7e93772c40d4e05830a986b557a436a626d",
+      "git_blob_sha1": "f90fabe6824419e48562250e1d84a9fcaac84734",
+      "origin_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+      "modified": false
+    },
+    {
+      "file": "analysis/protocol/test_brier_bounds.py",
+      "sha256": "f59b7b413227f0650d03d9086749f296cf10c5c55bcb67811afaedc01cde766e",
+      "git_blob_sha1": "a447dda6124c798d51e9642a7a37c6f0fe2348a4",
+      "origin_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+      "modified": false
+    },
+    {
+      "file": "analysis/protocol/test_day28_features.py",
+      "sha256": "a02119ccf4170b81d8dac114eb7a1a88cfbef22154753ed7bcff9cfe189071d9",
+      "git_blob_sha1": "edb84b202e180eee5d39d4910bd7e668ea5a8883",
+      "origin_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+      "modified": false
+    },
+    {
+      "file": "analysis/protocol/test_execution_contract.py",
+      "sha256": "9aa3c536a3917f0820d2718569bbe3ad02eedf50061138f69fde0299b48aa622",
+      "git_blob_sha1": "20e983cd1bb1336687d0f7f7d2c1018cb0cfe48d",
+      "origin_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+      "modified": false
+    },
+    {
+      "file": "analysis/protocol/test_locked_runner.py",
+      "sha256": "8146c9db8a4aadfb943c705829111d58e87d97627c3984bf9a8cc23e38bc4917",
+      "git_blob_sha1": "c6b194d09852d7f2349c5c4345f637cef8a44a70",
+      "origin_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+      "modified": false
+    },
+    {
+      "file": "analysis/protocol/test_target_bounds.py",
+      "sha256": "c552873b958cf59c7cfb13a14f704295a349a9b9da2e1f95d5537622f327ca28",
+      "git_blob_sha1": "39b527dcacea0421f47f38e7a1775ebd5c9f5e3d",
+      "origin_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+      "modified": false
+    },
+    {
+      "file": "analysis/test_audit_label_availability.py",
+      "sha256": "f1a3bea814c08ba497ed155ff38e18b0e8e4486b12268574ab1335567c8df64e",
+      "git_blob_sha1": "f922c48701d4ea231b9823a208f643b8d10e4025",
+      "origin_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+      "modified": false
+    },
+    {
+      "file": "analysis/test_audit_pipeline.py",
+      "sha256": "0d2fcfb1d643e8a2655803ed2ca6cf8b2c5065c38630fba495d158acfdc4aa25",
+      "git_blob_sha1": "3befcc72c53423d5f9f6050f60b724f147cb9c00",
+      "origin_commit": "16a76360591e530b07b0d870ae4d8008a21f0212",
+      "modified": false
+    }
+  ],
+  "aggregate_inputs": "Twelve retained CSVs are byte-identical to the independently checked source package: eight plotting inputs and four scientific-reporting exhibits. Six unused or redundant aggregate exports are omitted. No prediction thresholds or identifier values.",
+  "figure_script_original_sha256": "21701e4b420dc19a25b6f0f1003606ec51b9a28719a2ef452e35cada88e42734",
+  "figure_script_packaging_changes": [
+    "Create qa output directory if absent.",
+    "Remove optional comparison to an original private workspace path; retain expected input SHA-256 checks.",
+    "Remove private Library identity and Space URL from generated output metadata.",
+    "Replace private-workflow wording in metadata provenance with locked source split."
+  ],
+  "not_included": [
+    "raw OULAD tables",
+    "student identifiers or membership lists",
+    "row-level features and predictions",
+    "fitted models",
+    "private authorization receipts",
+    "private logs and chat links",
+    "manuscript drafts",
+    "third-party paper files",
+    "CI workflows"
+  ],
+  "validation_limits": "No new full fit or independent end-to-end data/label reconstruction was performed for packaging.",
+  "public_adapter": {
+    "file": "reproduce.py",
+    "archived_scientific_files_modified": false,
+    "purpose": "Separate explicit local opt-in entrypoint using unchanged archived runner and exact scientific fingerprints.",
+    "default": "Static dry run, no analysis imports, data access or model fitting.",
+    "tests": "Four adapter-only tests with a mock runner; no real estimator, calibrator or prediction.",
+    "real_data_execution_performed": false,
+    "historical_or_independent_approval_claimed": false
+  },
+  "minimal_public_selection": {
+    "parent_package_zip_sha256": "17eb1ee3b70fb6611d1333af3ebfbb3668c949d82c9aed8d3b58ed23ff71cdc9",
+    "parent_manifest_sha256": "59771d452c68ac395be1973e5602efe823c02ef9ec91237929940555e3a3e0db",
+    "omitted_files": {
+      "analysis/protocol/check_source_split.py": "Draft-only pre-lock checker; not imported by active pipeline or part of locked composite fingerprint.",
+      "analysis/protocol/test_source_split.py": "Test of omitted draft-only checker; known historical post-lock incompatibility documented rather than concealed.",
+      "figures/inputs/activity_window_checks.csv": "Prepublication QA/checklist export; fixed feature-window code/specification retained.",
+      "figures/inputs/analysis_coverage.csv": "Internal coverage checklist export; scientific population statements and counts retained.",
+      "figures/inputs/feature_bin_summary.csv": "Unused descriptive export; not a plotting input or reported main/supplementary result.",
+      "figures/inputs/cohort_module_counts.csv": "Unused descriptive export; final module counts/results remain in module_metrics.csv.",
+      "figures/inputs/input_fingerprints.csv": "Redundant with fixed EXPECTED fingerprints and PROVENANCE.",
+      "figures/inputs/source_data_fingerprints.csv": "Redundant with preserved analysis/audit/data_manifest.json."
+    },
+    "scientific_implementation_changed": false,
+    "plotting_logic_or_retained_data_changed": false,
+    "manifest_and_documentation_only_changes": "Retained-source inventory, input-hash inventory and twelve-table metadata reflect the minimal subset."
+  }
+}

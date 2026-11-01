@@ -1,0 +1,12 @@
+cohort,reason,records,interpretation
+2013J,excluded_registered_after_landmark,3,Exclusion/quarantine reason from audited classification; reasons not necessarily additive across sequential target filtering.
+2013J,excluded_unknown_registration,10,Exclusion/quarantine reason from audited classification; reasons not necessarily additive across sequential target filtering.
+2013J,excluded_withdrawn_by_landmark,1153,Exclusion/quarantine reason from audited classification; reasons not necessarily additive across sequential target filtering.
+2013J,quarantined_label,3,Exclusion/quarantine reason from audited classification; reasons not necessarily additive across sequential target filtering.
+2014J,excluded_registered_after_landmark,1,Exclusion/quarantine reason from audited classification; reasons not necessarily additive across sequential target filtering.
+2014J,excluded_unknown_registration,6,Exclusion/quarantine reason from audited classification; reasons not necessarily additive across sequential target filtering.
+2014J,excluded_withdrawn_by_landmark,1487,Exclusion/quarantine reason from audited classification; reasons not necessarily additive across sequential target filtering.
+2014J,not_common_J_module,2047,"2,047 CCC records before removing overlap; 451 also counted in training-student overlap, leaving 1,596 CCC rows removed after overlap."
+2014J,quarantined_label,58,"58 target unknown-label cases; retained for finite-cohort bounds, not removed from target analysis."
+2014J,training_student_overlap,890,Exclusion/quarantine reason from audited classification; reasons not necessarily additive across sequential target filtering.
+2014J,not_common_module_remaining_after_overlap,1596,CCC rows actually removed after the all-source student-ID overlap step.

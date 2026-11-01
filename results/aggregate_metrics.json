@@ -1,0 +1,348 @@
+{
+  "complete_case_metrics": {
+    "registration_logistic": {
+      "auroc": 0.5407177439766168,
+      "average_precision": 0.03322146916147511,
+      "brier": 0.026778788500342134,
+      "module_descriptive_only": {
+        "AAA": {
+          "brier": 0.01876134016713108,
+          "positives": 6,
+          "prevalence": 0.01910828025477707,
+          "records": 314
+        },
+        "BBB": {
+          "brier": 0.020762652508395246,
+          "positives": 36,
+          "prevalence": 0.021151586368977675,
+          "records": 1702
+        },
+        "DDD": {
+          "brier": 0.029315515946763775,
+          "positives": 40,
+          "prevalence": 0.03003003003003003,
+          "records": 1332
+        },
+        "EEE": {
+          "brier": 0.022829789726513047,
+          "positives": 23,
+          "prevalence": 0.023421588594704685,
+          "records": 982
+        },
+        "FFF": {
+          "brier": 0.03459735073927179,
+          "positives": 62,
+          "prevalence": 0.03587962962962963,
+          "records": 1728
+        },
+        "GGG": {
+          "brier": 0.02642179344188205,
+          "positives": 19,
+          "prevalence": 0.02664796633941094,
+          "records": 713
+        }
+      },
+      "prevalence_baseline": 0.027470093043863535,
+      "raw_brier": 0.026754972261609777,
+      "reliability_10_bins": [
+        {
+          "bin": 0,
+          "count": 6771,
+          "mean_probability": 0.027844723171917937,
+          "observed_prevalence": 0.027470093043863535
+        },
+        {
+          "bin": 1,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        },
+        {
+          "bin": 2,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        },
+        {
+          "bin": 3,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        },
+        {
+          "bin": 4,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        },
+        {
+          "bin": 5,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        },
+        {
+          "bin": 6,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        },
+        {
+          "bin": 7,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        },
+        {
+          "bin": 8,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        },
+        {
+          "bin": 9,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        }
+      ],
+      "scope": "known-label complete cases only; conditional on observed labels and selected known-eligible records"
+    },
+    "registration_plus_vle_logistic": {
+      "auroc": 0.6753847535536124,
+      "average_precision": 0.06360415965246843,
+      "brier": 0.026344511237199157,
+      "module_descriptive_only": {
+        "AAA": {
+          "brier": 0.01873697850313433,
+          "positives": 6,
+          "prevalence": 0.01910828025477707,
+          "records": 314
+        },
+        "BBB": {
+          "brier": 0.02050449020809162,
+          "positives": 36,
+          "prevalence": 0.021151586368977675,
+          "records": 1702
+        },
+        "DDD": {
+          "brier": 0.029120373056354093,
+          "positives": 40,
+          "prevalence": 0.03003003003003003,
+          "records": 1332
+        },
+        "EEE": {
+          "brier": 0.022166793080247035,
+          "positives": 23,
+          "prevalence": 0.023421588594704685,
+          "records": 982
+        },
+        "FFF": {
+          "brier": 0.03378417101304535,
+          "positives": 62,
+          "prevalence": 0.03587962962962963,
+          "records": 1728
+        },
+        "GGG": {
+          "brier": 0.02617315115920168,
+          "positives": 19,
+          "prevalence": 0.02664796633941094,
+          "records": 713
+        }
+      },
+      "prevalence_baseline": 0.027470093043863535,
+      "raw_brier": 0.026340975548734637,
+      "reliability_10_bins": [
+        {
+          "bin": 0,
+          "count": 6642,
+          "mean_probability": 0.024005884340233565,
+          "observed_prevalence": 0.025444143330322192
+        },
+        {
+          "bin": 1,
+          "count": 124,
+          "mean_probability": 0.13471579862669888,
+          "observed_prevalence": 0.12903225806451613
+        },
+        {
+          "bin": 2,
+          "count": 5,
+          "mean_probability": 0.2096732980434143,
+          "observed_prevalence": 0.2
+        },
+        {
+          "bin": 3,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        },
+        {
+          "bin": 4,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        },
+        {
+          "bin": 5,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        },
+        {
+          "bin": 6,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        },
+        {
+          "bin": 7,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        },
+        {
+          "bin": 8,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        },
+        {
+          "bin": 9,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        }
+      ],
+      "scope": "known-label complete cases only; conditional on observed labels and selected known-eligible records"
+    },
+    "source_prevalence_constant": {
+      "auroc": 0.5,
+      "average_precision": 0.027470093043863535,
+      "brier": 0.026716233622185167,
+      "module_descriptive_only": {
+        "AAA": {
+          "brier": 0.01882827050751689,
+          "positives": 6,
+          "prevalence": 0.01910828025477707,
+          "records": 314
+        },
+        "BBB": {
+          "brier": 0.020755785947927912,
+          "positives": 36,
+          "prevalence": 0.021151586368977675,
+          "records": 1702
+        },
+        "DDD": {
+          "brier": 0.02913110334386934,
+          "positives": 40,
+          "prevalence": 0.03003003003003003,
+          "records": 1332
+        },
+        "EEE": {
+          "brier": 0.022897151017727067,
+          "positives": 23,
+          "prevalence": 0.023421588594704685,
+          "records": 982
+        },
+        "FFF": {
+          "brier": 0.03464921610734117,
+          "positives": 62,
+          "prevalence": 0.03587962962962963,
+          "records": 1728
+        },
+        "GGG": {
+          "brier": 0.025940695436402088,
+          "positives": 19,
+          "prevalence": 0.02664796633941094,
+          "records": 713
+        }
+      },
+      "prevalence_baseline": 0.027470093043863535,
+      "raw_brier": 0.026716233622185167,
+      "reliability_10_bins": [
+        {
+          "bin": 0,
+          "count": 6771,
+          "mean_probability": 0.028334147532975088,
+          "observed_prevalence": 0.027470093043863535
+        },
+        {
+          "bin": 1,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        },
+        {
+          "bin": 2,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        },
+        {
+          "bin": 3,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        },
+        {
+          "bin": 4,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        },
+        {
+          "bin": 5,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        },
+        {
+          "bin": 6,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        },
+        {
+          "bin": 7,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        },
+        {
+          "bin": 8,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        },
+        {
+          "bin": 9,
+          "count": 0,
+          "mean_probability": null,
+          "observed_prevalence": null
+        }
+      ],
+      "scope": "known-label complete cases only; conditional on observed labels and selected known-eligible records"
+    }
+  },
+  "confidence_region_for_partial_bounds": "none; finite-cohort identification endpoints only",
+  "limitations": [
+    "bounds are conditional on accepted labels and fixed fitted/calibrated probabilities",
+    "no fitting/calibration uncertainty",
+    "no source-selection uncertainty",
+    "no future-population inference",
+    "no administrative-recording-delay correction",
+    "AP/AUROC/reliability are not partially identified",
+    "module summaries are descriptive only; no module-specific superiority claims"
+  ],
+  "primary_paired_brier_improvement_bounds": {
+    "fixed_predictors_only": true,
+    "known_records": 6771,
+    "lower": "178425698684165355365473531502370512707/580947070925772191747846298537886279008256",
+    "positive_favors_activity": true,
+    "uncertain_records": 58,
+    "upper": "889772612563384017376104856164416714819/580351576783660549436785392974880684638208"
+  },
+  "scope": "retrospective temporal validation; complete-case diagnostics and finite-cohort bounds",
+  "source_prevalence_reference": 0.028334147532975085
+}

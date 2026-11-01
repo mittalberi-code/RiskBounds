@@ -1,0 +1,236 @@
+{
+  "package": "RiskBounds",
+  "schema_version": 1,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 350,
+      "sha256": "4f538a0f6030392cafc1da84ef145c9122d25e61d9af35e71f44ce5f17cf4c9d"
+    },
+    {
+      "path": "ANALYSIS.md",
+      "bytes": 6568,
+      "sha256": "e30ef118d8ff7ca4489c046f08b4d890cd7dd0555b68f935f23c782325cfff56"
+    },
+    {
+      "path": "PROVENANCE.json",
+      "bytes": 10487,
+      "sha256": "7cf5ad8431f52ff7f77283e1d83e3d48c6551ae69c3dfc2e0edf97d7cef28017"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6233,
+      "sha256": "3ca790cac4027a11a580b65c909c7c36216d9db6ba94388ce56c6b71161d9114"
+    },
+    {
+      "path": "RIGHTS.md",
+      "bytes": 1218,
+      "sha256": "4804f7562c2c2ed933ecb28628c58a8ee5825581cae56520a689e777015b73fc"
+    },
+    {
+      "path": "analysis/.gitignore",
+      "bytes": 69,
+      "sha256": "7b1c528047a60a9ae15ee2a839c1089e9886e133bd0e338daf71da801ad8563f"
+    },
+    {
+      "path": "analysis/acquire_oulad.py",
+      "bytes": 5114,
+      "sha256": "1a1613ed36e93f82ad81906f24fefe72ee0bd9bd3c00d170c7697a1aff8f81b9"
+    },
+    {
+      "path": "analysis/audit/data_manifest.json",
+      "bytes": 2864,
+      "sha256": "610a4bfe83b958d09e07e2e8ff233aad51d78a3f16ab26da968cd858c28b2ae9"
+    },
+    {
+      "path": "analysis/audit_label_availability.py",
+      "bytes": 10176,
+      "sha256": "db7f9782412fd7028a39347948679dfed81a05400adff64a09ca06eed9fe877e"
+    },
+    {
+      "path": "analysis/audit_pipeline.py",
+      "bytes": 29086,
+      "sha256": "ced2b9c0792b8170afe56d61b0df219b51a116c2ad3ea7acdaea96ad220342c9"
+    },
+    {
+      "path": "analysis/protocol/__init__.py",
+      "bytes": 45,
+      "sha256": "d48b0add48ebb4f026dbf506cbb33eeddcdd86e86ec1afa1a338f5c6ad7bca7e"
+    },
+    {
+      "path": "analysis/protocol/brier_bounds.py",
+      "bytes": 4651,
+      "sha256": "10756935b2bb1ad6a939d9593a388f104c5a6153edc5da0a64af688584022f9f"
+    },
+    {
+      "path": "analysis/protocol/candidate_protocol.json",
+      "bytes": 9279,
+      "sha256": "05032556f0cbbf1e777caa0df00db5042fa3f64ef3ad10245088b2eb77df9249"
+    },
+    {
+      "path": "analysis/protocol/day28_features.py",
+      "bytes": 9774,
+      "sha256": "c9f0631fe630efa657b42f26f1d2ebb71336814037536c62207b4115cc6d969e"
+    },
+    {
+      "path": "analysis/protocol/draft_fitting_protocol.md",
+      "bytes": 10589,
+      "sha256": "1f9d78325a87c434a552be2181b6a85c7bef351b206b67d746d7747f87ff8d12"
+    },
+    {
+      "path": "analysis/protocol/execution_contract.py",
+      "bytes": 1687,
+      "sha256": "4377c858c6bab96a1ae2e5fb3921d3f39ab0bc7afa0ff2ede8a4c9aa271faa6f"
+    },
+    {
+      "path": "analysis/protocol/locked_runner.py",
+      "bytes": 43087,
+      "sha256": "d6ef34ceedf98873e48765324a125f780397830f8b670d936b1c140a12f5ce61"
+    },
+    {
+      "path": "analysis/protocol/partial_brier_bounds.md",
+      "bytes": 4699,
+      "sha256": "bf07caaa68755cd416fea6468171e59e4ba3ae01f672e61ea09c86c0bba0d5a7"
+    },
+    {
+      "path": "analysis/protocol/requirements-modeling.txt",
+      "bytes": 265,
+      "sha256": "8b47da6707b6689affafe219cbd6f9f1061bb88a03637d93c4b2b6646f28e8b1"
+    },
+    {
+      "path": "analysis/protocol/target_bounds.py",
+      "bytes": 3765,
+      "sha256": "c7baf092271992052b04f5544975b7e93772c40d4e05830a986b557a436a626d"
+    },
+    {
+      "path": "analysis/protocol/test_brier_bounds.py",
+      "bytes": 4818,
+      "sha256": "f59b7b413227f0650d03d9086749f296cf10c5c55bcb67811afaedc01cde766e"
+    },
+    {
+      "path": "analysis/protocol/test_day28_features.py",
+      "bytes": 1859,
+      "sha256": "a02119ccf4170b81d8dac114eb7a1a88cfbef22154753ed7bcff9cfe189071d9"
+    },
+    {
+      "path": "analysis/protocol/test_execution_contract.py",
+      "bytes": 2562,
+      "sha256": "9aa3c536a3917f0820d2718569bbe3ad02eedf50061138f69fde0299b48aa622"
+    },
+    {
+      "path": "analysis/protocol/test_locked_runner.py",
+      "bytes": 25109,
+      "sha256": "8146c9db8a4aadfb943c705829111d58e87d97627c3984bf9a8cc23e38bc4917"
+    },
+    {
+      "path": "analysis/protocol/test_target_bounds.py",
+      "bytes": 3347,
+      "sha256": "c552873b958cf59c7cfb13a14f704295a349a9b9da2e1f95d5537622f327ca28"
+    },
+    {
+      "path": "analysis/test_audit_label_availability.py",
+      "bytes": 4109,
+      "sha256": "f1a3bea814c08ba497ed155ff38e18b0e8e4486b12268574ab1335567c8df64e"
+    },
+    {
+      "path": "analysis/test_audit_pipeline.py",
+      "bytes": 3975,
+      "sha256": "0d2fcfb1d643e8a2655803ed2ca6cf8b2c5065c38630fba495d158acfdc4aa25"
+    },
+    {
+      "path": "figures/inputs/cohort_flow.csv",
+      "bytes": 787,
+      "sha256": "7a0846d44cae536f1d410370f579e3e2fd616a239d7d2646b178a81375f6ac9f"
+    },
+    {
+      "path": "figures/inputs/event_day_counts.csv",
+      "bytes": 2929,
+      "sha256": "ceb216b74315365902ce6262dba9eda4ac1141c67ee7cee82b9ca5e45b1ac4ec"
+    },
+    {
+      "path": "figures/inputs/exclusion_reason_counts.csv",
+      "bytes": 1787,
+      "sha256": "4e496889a8ea69900e1c4e432b48d4ee58a491584238d8a3a9e85f53ce881a1e"
+    },
+    {
+      "path": "figures/inputs/feature_summary.csv",
+      "bytes": 269,
+      "sha256": "1c0caf354d31919eed33cbb3d3b678521ff5a01bbaf31f9d00d35e44a9c85175"
+    },
+    {
+      "path": "figures/inputs/fit_log_summary.csv",
+      "bytes": 667,
+      "sha256": "2cc03d84fc7dc218b69edf78757a81402b6a21760ff8be7c110d643f73c44d51"
+    },
+    {
+      "path": "figures/inputs/label_availability_summary.csv",
+      "bytes": 470,
+      "sha256": "f580e42fdf9d19b1de970799db54ba9a4aeaf36d376afec0ab329852ce7e2463"
+    },
+    {
+      "path": "figures/inputs/metric_comparison.csv",
+      "bytes": 735,
+      "sha256": "a8591f8471188459604f1dafffabd11229f9dd5bdab95f4ffa5ec4655930dd4c"
+    },
+    {
+      "path": "figures/inputs/module_metrics.csv",
+      "bytes": 672,
+      "sha256": "e9cc4d5f23c349784cee0428c7f1351000a7fced4efb510f87e364fc14469739"
+    },
+    {
+      "path": "figures/inputs/primary_brier_bounds.csv",
+      "bytes": 491,
+      "sha256": "ab3434cb1b7e3d798d8ee13956bfdf17fa7a596412f732a2c553ca31a1905b12"
+    },
+    {
+      "path": "figures/inputs/reliability_bins.csv",
+      "bytes": 3348,
+      "sha256": "e3f5ce5d696fa4bc28251d60cf6f7da39c170450da2c28f88458e8196bb833f4"
+    },
+    {
+      "path": "figures/inputs/roc_pr_curve_points.csv",
+      "bytes": 2445160,
+      "sha256": "059b577aa03203d53b8149ef5052282f2972c7cf9711ada4d1c4d3be63c209ed"
+    },
+    {
+      "path": "figures/inputs/zero_activity_summary.csv",
+      "bytes": 132,
+      "sha256": "5f43d7159f5e84c55e20bade8688cd3f9a7a3b43392717d4020c04af7dc4ffde"
+    },
+    {
+      "path": "figures/requirements-figures.txt",
+      "bytes": 32,
+      "sha256": "4c40934e438ae009a1eb0b5a9322cce029fba6ca1af6e314c088c1957cee0c04"
+    },
+    {
+      "path": "figures/scripts/build_manuscript_figures.py",
+      "bytes": 18439,
+      "sha256": "c3be1f005e1163c6402cccfbef307a61f9e955055c132d9bbb3e29e6a55a5b24"
+    },
+    {
+      "path": "figures/source_input_hashes.json",
+      "bytes": 1152,
+      "sha256": "1e1e3899a25170f9524b359a9176393ab5d9eef61c0681c6119eb248aeef95b7"
+    },
+    {
+      "path": "reproduce.py",
+      "bytes": 4743,
+      "sha256": "d71fc29acf03ac2b960ec81d264547f4ebd4d9de6ea3396b56be0872e8c41348"
+    },
+    {
+      "path": "results/aggregate_metrics.json",
+      "bytes": 9687,
+      "sha256": "ba61b44e218fbc911a84dad6554ba4b7f694bf41dbcfaad846742ad86fdac7c9"
+    },
+    {
+      "path": "tools/test_reproduction_adapter.py",
+      "bytes": 2349,
+      "sha256": "69c73dc0f898a559a58c97ac5a1f9241a6b5ae8ffb208927504ec4ca7297894b"
+    },
+    {
+      "path": "tools/verify_package.py",
+      "bytes": 3513,
+      "sha256": "6763c09e20c708bd872495e7907788740be048339811ec4b71e18031e9739cf6"
+    }
+  ]
+}

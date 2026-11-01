@@ -1,0 +1,21 @@
+# Never publish raw, individual-level, fitted, or runtime artifacts.
+**/data/
+**/__pycache__/
+**/.pytest_cache/
+**/.venv/
+*.py[cod]
+*.pkl
+*.pickle
+*.joblib
+*.npz
+*.npy
+*.sqlite*
+*.log
+*.zip
+.env*
+analysis/reproduction-manifest.local.json
+analysis/audit/*
+!analysis/audit/data_manifest.json
+figures/qa/
+figures/figure_*.*
+figures/inputs_manifest.json

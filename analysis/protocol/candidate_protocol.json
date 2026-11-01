@@ -1,0 +1,137 @@
+{
+  "document_status": "LOCKED",
+  "execution_authorization": true,
+  "protocol_lock": true,
+  "runtime": {
+    "python": "3.12.14",
+    "scikit_learn": "1.8.0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0",
+    "api_probe": "Constructors and splitter API were checked locally without estimator fitting; see split_diagnostics.json."
+  },
+  "execution_limits": {
+    "cpu_threads_max": 2,
+    "overall_execution_timeout_seconds": 1200,
+    "base_estimator_fit_timeout_seconds": 300,
+    "device": "CPU only",
+    "paid_resources": false,
+    "failure_policy": "Fail closed and preserve logs on convergence warning, timeout, non-finite coefficients, or invalid probability. No retry with altered settings.",
+    "estimator_parameters_unchanged": true,
+    "base_estimator_max_iter": 1000,
+    "enforcement_note": "Locked cap for the single parent-authorized run; stop on any violation and do not retry with altered settings."
+  },
+  "study": {
+    "objective": "At day 28, predict recorded withdrawal during days 29-56 among the declared risk set.",
+    "source_cohort": "2013J",
+    "target_cohort": "2014J",
+    "shared_modules": ["AAA", "BBB", "DDD", "EEE", "FFF", "GGG"],
+    "unit": "student x module presentation",
+    "population_definition": "New-to-training: remove 2014J students appearing anywhere in 2013J before restricting either cohort to shared modules and eligible records. This does not mean first-ever student.",
+    "known_source_records": 7676,
+    "known_target_records": 6771,
+    "uncertain_target_records": 58,
+    "target_unknown_state_space": [
+      "ineligible: withdrawal by day 28",
+      "eligible with y=1: withdrawal days 29-56",
+      "eligible with y=0: withdrawal after day 56"
+    ],
+    "unknown_state_independence": "Candidate explicit Cartesian-product assumption: each of the 58 records independently takes one of its three feasible states. No externally known total or cross-record constraint is imposed. Review and confirm before lock.",
+    "target_unknown_probability_requirement": "Both fixed predictors must produce valid probabilities for every one of the 58 uncertain records. If any are unavailable or invalid, stop the model-specific analysis; do not use a fallback probability."
+  },
+  "split": {
+    "splitter": "sklearn.model_selection.StratifiedGroupKFold",
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 42,
+    "fixed_fold_index": 0,
+    "group_column": "id_student",
+    "minimum_calibration_positive_records": 20,
+    "purpose": "One 80/20 source fit/calibration split; no alternate-fold selection.",
+    "stop_conditions": [
+      "Both classes must be present in source fit and calibration partitions.",
+      "Calibration partition must contain at least 20 positive records.",
+      "No student may occur in both partitions."
+    ],
+    "vocabulary_and_transform_fit_partition": "source fit only"
+  },
+  "predictors": [
+    {
+      "name": "source_prevalence_constant",
+      "probability": "mean source-fit y",
+      "role": "descriptive reference only; not part of the primary calibrated paired comparison"
+    },
+    {
+      "name": "registration_logistic",
+      "inputs": ["signed_registration_lead_time_days", "module_one_hot"],
+      "model": "LogisticRegression",
+      "parameters": {"C": 1.0, "penalty": "l2", "solver": "lbfgs", "class_weight": null, "fit_intercept": true, "max_iter": 1000, "tol": 0.0001, "random_state": 42}
+    },
+    {
+      "name": "registration_plus_vle_logistic",
+      "inputs": [
+        "signed_registration_lead_time_days", "module_one_hot",
+        "log1p_total_clicks", "active_days",
+        "recency_days_at_day28", "no_activity",
+        "log1p_clicks_days_0_6", "log1p_clicks_days_7_13",
+        "log1p_clicks_days_14_20", "log1p_clicks_days_21_27",
+        "log1p_clicks_days_28_28"
+      ],
+      "model": "LogisticRegression",
+      "parameters": {"C": 1.0, "penalty": "l2", "solver": "lbfgs", "class_weight": null, "fit_intercept": true, "max_iter": 1000, "tol": 0.0001, "random_state": 42}
+    }
+  ],
+  "feature_definitions": {
+    "signed_registration_lead_time_days": "-date_registration; positive means registration before module day 0, negative means after day 0.",
+    "module_one_hot": "Fit category vocabulary on source-fit module values only; error on unseen category; do not learn from 2014J.",
+    "activity_window": "VLE days 0 through 28 inclusive only. Ignore all negative-day and day-29-or-later events.",
+    "click_bins": "Sum sum_click over [0,6], [7,13], [14,20], [21,27], and [28]; apply log1p to each bin total.",
+    "total_clicks": "Sum sum_click over days 0-28 inclusive; apply log1p.",
+    "active_days": "Number of distinct days with recorded VLE activity in 0-28.",
+    "recency": "28 minus the most recent active day for students with activity; set to 0 for no activity and include a separate no-activity indicator.",
+    "zero_activity": "Preserve eligible rows with no VLE rows using a left aggregation; total clicks and active days are zero, no-activity is one.",
+    "scaling": "StandardScaler for numeric inputs, fit on source-fit rows only. One-hot categories are not scaled.",
+    "excluded": ["grades", "demographics", "final_result", "withdrawal dates", "student identifiers", "future activity", "optional assessment features"]
+  },
+  "calibration": {
+    "method": "Platt sigmoid on the frozen predictor decision_function score.",
+    "fit_partition": "held-out source calibration partition only",
+    "parameterization": "sigmoid(a * decision_score + b), fit as one-feature unpenalized binary logistic regression with intercept",
+    "calibrator_instances": "Use one separate sigmoid calibrator for each frozen base predictor, both fit on the identical source calibration partition.",
+    "base_models": "Fit each base model once on source-fit data. Freeze it before scoring calibration and target rows; do not refit after calibration.",
+    "calibrator_parameters": {"penalty": null, "solver": "lbfgs", "fit_intercept": true, "max_iter": 1000, "tol": 0.0001, "random_state": 42},
+    "eligibility": "Require both classes and at least 20 positives in calibration. If unmet, stop; do not change fold or calibration method.",
+    "target_recalibration": false
+  },
+  "primary_estimand": {
+    "metric": "unweighted record-average paired Brier improvement",
+    "sign": "Brier(registration calibrated) - Brier(activity calibrated); positive favors activity.",
+    "population": "all eligible 2014J target records after declared student overlap and common-module rules, including the 58 uncertain records under partial identification",
+    "identification": "Finite-cohort bounds only, for the fixed frozen model probabilities. For each uncertain record, feasible states are ineligible, eligible y=0, eligible y=1. Evaluate m=0..58 included records; exact sorted-prefix paired-contribution bounds as specified in partial_brier_bounds.md.",
+    "not_covered": ["source-selection uncertainty", "model-selection or fitting uncertainty", "future-population uncertainty", "administrative recording delay", "constraints linking uncertain states across records"],
+    "confidence_region": "No nominal bootstrap confidence region for nonsmooth bound endpoints in this draft."
+  },
+  "secondary_diagnostics": {
+    "population": "Known-label complete-case 2014J records only; explicitly conditional on observed labels and selected known-eligible cases.",
+    "metrics": ["average precision (with prevalence baseline)", "AUROC", "Brier score", "fixed 10-bin reliability table"],
+    "raw_probabilities": "Report as predefined secondary diagnostics, not as a way to choose calibration or models.",
+    "not_bounded": ["average precision", "AUROC", "calibration slope"],
+    "module_results": "Descriptive only; no module-specific superiority claims.",
+    "threshold_metrics": "None prespecified; no threshold selection in this draft."
+  },
+  "prohibitions": [
+    "No model fitting, calibration fitting, prediction experiment, tuning, or target inspection before a reviewed protocol lock and explicit later authorization.",
+    "Never fit preprocessing, categories, normalizers, calibration, thresholds, or vocabulary on 2014J.",
+    "Do not change cohorts, modules, target horizon, population, uncertain-case count, or feature definitions to improve results.",
+    "Do not impute dates, infer withdrawal from VLE activity, or silently drop uncertain target records from the primary estimand.",
+    "Do not claim causal benefit, deployment benefit, publication readiness, novelty, or a new algorithm."
+  ],
+  "unresolved_before_lock": [
+    "Independent mathematical review of the feasible three-state set and its record-level independence assumption.",
+    "Confirm all 58 target uncertain records have day-28 features and valid scores under each frozen model; otherwise stop, with no fallback.",
+    "Review source-cohort quarantine and source-selection implications; the proposed fit uses the 7676 accepted source records only.",
+    "Review whether 10 fixed reliability bins are adequately populated and whether a descriptive calibration table is preferable to a scalar metric.",
+    "Review exact sklearn version pin and execution resource bound before any later fit."
+  ]
+}
